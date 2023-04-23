@@ -7,7 +7,7 @@ int maxDistance(int** arrays, int arraysSize, int* arraysColSize){
     int max = 0;
     for (int i = 0; i < arraysSize; i++) {
         for (int j = 0; j < arraysColSize[i]; j++) {
-            for (int k = i + 1; j < arraysSize; j++) {
+            for (int k = i + 1; k < arraysSize; k++) {
                 for (int l = 0; l < arraysColSize[k]; l++) {
                     int diff = abs(arrays[i][j] - arrays[k][l]);
                     if (diff > max) max = diff;
